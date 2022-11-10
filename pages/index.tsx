@@ -1,10 +1,11 @@
-import styles from "../styles/Home.module.css";
-import { NewButton } from "../styles/GeneralStyles";
+import FeaturedProdSection from "../components/client/Home/featuredProductsSection/FeaturedProdSection";
+import Outdoor from "../components/client/Home/outdoor/Outdoor";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <NewButton>New Button</NewButton>
-    </div>
+    <>
+      <Outdoor />
+      <FeaturedProdSection></FeaturedProdSection>
+    </>
   );
 }

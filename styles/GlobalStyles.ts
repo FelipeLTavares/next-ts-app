@@ -1,11 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import { globalCss } from "@stitches/react";
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
-  }
-`;
-
-export default GlobalStyle;
+export const GlobalStyles = globalCss({
+  "*": {
+    margin: 0,
+    padding: 0,
+    boxSizing: "border-box",
+  },
+});

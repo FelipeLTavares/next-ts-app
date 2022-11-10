@@ -1,11 +1,12 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import GlobalStyle from "../styles/GlobalStyles";
+import MainMenu from "../components/UI/mainMenu/MainMenu";
+import { GlobalStyles } from "../styles/GlobalStyles";
 
 export default function App({ Component, pageProps }: AppProps) {
+  GlobalStyles();
   return (
     <>
-      <GlobalStyle />
+      <MainMenu />
       <Component {...pageProps} />
     </>
   );
