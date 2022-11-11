@@ -1,18 +1,11 @@
 import { styled } from "@stitches/react";
 
-export const Container = styled("div", {
+export const Header = styled("header", {
   width: "100%",
   height: "8vh",
   display: "grid",
-  gridTemplateColumns: 1200,
+  gridTemplateColumns: "600px 600px",
   justifyContent: "center",
-  alignContent: "center",
-});
-
-export const Header = styled("header", {
-  width: "100%",
-  display: "flex",
-  justifyContent: "space-between",
   alignItems: "center",
 });
 
@@ -24,6 +17,7 @@ export const Menu = styled("nav", {
   height: "8vh",
   display: "flex",
   alignItems: "center",
+  justifyContent: "end",
   transition: "all ease 0.4s",
   a: {
     fontSize: 16,

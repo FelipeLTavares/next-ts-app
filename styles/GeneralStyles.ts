@@ -7,12 +7,54 @@ export const Container = styled("div", {
   justifyContent: "center",
   justifyItems: "center",
   variants: {
-    sections: {
+    place: {
       section: {
-        marginTop: 128,
+        margin: "128px 0",
       },
     },
   },
+});
+
+//Titles
+export const Title1 = styled("h1", {
+  color: "White",
+  fontSize: 50,
+  margin: 10,
+  zIndex: 3,
+});
+
+export const Title2 = styled("h2", {
+  fontSize: 50,
+  margin: 10,
+  fontWeight: 200,
+});
+
+export const SubTitle = styled("h3", {
+  fontWeight: 100,
+  variants: {
+    place: {
+      outdoor: {
+        color: "White",
+        width: "50%",
+        fontSize: 24,
+        textAlign: "center",
+        zIndex: 3,
+      },
+      section: {
+        color: "Gray",
+        fontSize: 14,
+        letterSpacing: 3,
+      },
+    },
+  },
+});
+
+//Text
+export const Text = styled("p", {
+  fontSize: 16,
+  color: "Gray",
+  margin: 10,
+  letterSpacing: 2,
 });
 
 export const Button = styled("button", {
@@ -33,16 +75,4 @@ export const Button = styled("button", {
       },
     },
   },
-});
-
-export const SectionTitle = styled("h2", {
-  fontSize: 60,
-  margin: 10,
-});
-
-export const SectionSubtitle = styled("p", {
-  fontSize: 20,
-  color: "Gray",
-  margin: 10,
-  letterSpacing: 2,
 });

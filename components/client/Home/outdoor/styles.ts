@@ -1,6 +1,6 @@
 import { styled } from "@stitches/react";
 
-export const Container = styled("div", {
+export const ODContainer = styled("div", {
   width: "100%",
   height: "82vh",
   background: "LightGray",
