@@ -1,6 +1,7 @@
-export interface CardProdutoProps {
+export interface ProductProps {
   id: string;
-  nome: string;
-  valor: string;
-  imagem: string;
+  type: string;
+  name: string;
+  value: string;
+  image: string;
 }
