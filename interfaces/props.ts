@@ -1,7 +1,7 @@
-export interface ProductProps {
-  id: string;
-  type: string;
-  name: string;
-  value: string;
-  image: string;
+import { Product } from ".";
+
+export interface ProductProps extends Product {}
+
+export interface ProductsListProps {
+  list: Product[];
 }

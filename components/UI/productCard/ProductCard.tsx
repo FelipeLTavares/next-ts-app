@@ -9,7 +9,7 @@ import {
   HiddenType,
 } from "./styles";
 
-export const Product = ({ id, type, name, value, image }: ProductProps) => {
+export const ProductCard = ({ id, type, name, value, image }: ProductProps) => {
   const link = `/products/${id}`;
   return (
     <>

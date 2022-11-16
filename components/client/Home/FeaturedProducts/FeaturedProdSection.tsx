@@ -1,7 +1,7 @@
 import { ProductProps } from "../../../../interfaces/props";
 import { Container, SubTitle, Title2 } from "../../../../styles/GeneralStyles";
 import { Products } from "../../../../Utils/Lists";
-import { Product } from "../../../UI/productCard/Product";
+import { ProductCard } from "../../../UI/productCard/ProductCard";
 import { Featured } from "./styles";
 
 export const FeaturedProducts = () => {
@@ -11,7 +11,7 @@ export const FeaturedProducts = () => {
       <SubTitle place="section">BEST FROM THE BEST!</SubTitle>
       <Featured>
         {Products.map(({ id, name, type, value, image }: ProductProps) => (
-          <Product
+          <ProductCard
             key={id}
             id={id}
             name={name}
